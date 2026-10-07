@@ -18,9 +18,9 @@
     '#endif',
     'uniform vec2 r;',   // canvas size in pixels
     'uniform float t;',  // seconds
-    'const vec3 BASE=vec3(56.,77.,72.)/255.;',
-    'const vec3 GREEN=vec3(84.,131.,104.)/255.;',
-    'const vec3 TEAL=vec3(124.,163.,154.)/255.;',
+    'const vec3 BASE=vec3(85.,112.,124.)/255.;',
+    'const vec3 GREEN=vec3(113.,166.,156.)/255.;',
+    'const vec3 TEAL=vec3(153.,198.,206.)/255.;',
     'float h(vec2 p){p=fract(p*vec2(.1031,.1030));p+=dot(p,p.yx+33.33);return fract((p.x+p.y)*p.x);}',
     'float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);',
     '  return mix(mix(h(i),h(i+vec2(1.,0.)),f.x),mix(h(i+vec2(0.,1.)),h(i+vec2(1.,1.)),f.x),f.y);}',
@@ -97,7 +97,7 @@
       '#ic-bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block;' +
       'pointer-events:none;opacity:0;transition:opacity 1.2s ease}' +
       'html.ic-live #ic-bg{opacity:1}' +
-      'html.ic-live{background-color:#384d48}' +
+      'html.ic-live{background-color:#55707c}' +
       'html.ic-live body{background-color:transparent}' +
       'html.ic-live main{background-color:transparent}' +
       'main>img[data-nimg]{transition:opacity 1.2s ease}' +
